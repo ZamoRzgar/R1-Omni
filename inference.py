@@ -18,8 +18,8 @@ def main():
     args = parser.parse_args()
 
     # 初始化BERT分词器
-    bert_model = "bert-base-uncased"
-    bert_tokenizer = BertTokenizer.from_pretrained(bert_model)
+    bert_model = "C:/Users/zamor/models/bert-base-uncased"
+    bert_tokenizer = BertTokenizer.from_pretrained(bert_model, local_files_only=True)
 
     # 禁用Torch初始化
     disable_torch_init()
