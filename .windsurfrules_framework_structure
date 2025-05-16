@@ -1,0 +1,16 @@
+c:\Users\zamor\R1-Omni\
+├── humanomni/              (Existing R1-Omni code)
+├── models/                 (New directory for additional models)
+│   ├── stsnet/            
+│   ├── openpose/
+│   └── deblurgan/
+├── fusion/                 (New directory for fusion components)
+│   ├── __init__.py
+│   └── multimodal_fusion.py
+├── utils/                  (New directory for utility functions)
+│   ├── __init__.py
+│   ├── video_processing.py
+│   └── visualization.py
+├── download_models.py      (Extend existing script)
+├── enhanced_inference.py   (New main inference script)
+└── README_ENHANCED.md      (Documentation for enhanced system)
