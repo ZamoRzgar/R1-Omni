@@ -268,3 +268,15 @@ class DeblurGANv2:
             Deblurred BGR image
         """
         return self.process(image)
+        
+    def deblur_image(self, image: np.ndarray) -> np.ndarray:
+        """
+        Alias for process() method to maintain backward compatibility
+        
+        Args:
+            image: BGR image
+            
+        Returns:
+            Deblurred BGR image
+        """
+        return self.process(image)

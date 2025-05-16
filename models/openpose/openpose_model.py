@@ -119,7 +119,8 @@ class OpenPoseAnalyzer:
             raise RuntimeError(f"Failed to initialize OpenPose models: {str(e)}")
         
         # Set up parameter constants
-        self.emotion_confidence_threshold = 0.5
+        # Lower the confidence threshold to detect more subtle signals
+        self.emotion_confidence_threshold = 0.2  # Was 0.5, reduced to detect more subtle signals
         
     def process_image(self, image: np.ndarray) -> Tuple[Dict, np.ndarray]:
         """

@@ -61,3 +61,4 @@ outputs/original_video.mp4
 outputs/Video.mp4
 outputs/video1.mp4
 models/stsnet/README.md
+data/test_videos/video2.mp4
